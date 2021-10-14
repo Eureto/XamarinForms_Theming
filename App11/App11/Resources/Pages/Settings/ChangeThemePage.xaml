@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App11.Resources.Pages.Settings.ChangeThemePage"
+             BackgroundColor="{DynamicResource pageBackgroundColor}">
+
+    <ContentPage.Content>
+        <StackLayout Margin="10,10">
+
+            <Label Text="Choose Theme" TextColor="{DynamicResource textColor}" />
+            <RadioButton Content="Light"
+                         TextColor="{DynamicResource textColor}"
+                        CheckedChanged="RadioButton_ChangeTheme"
+                        x:Name="LightTheme"
+                        GroupName="Theme"
+                        IsChecked="False"/>
+
+            <RadioButton Content="Dark"
+                         TextColor="{DynamicResource textColor}"
+                        CheckedChanged="RadioButton_ChangeTheme"
+                        x:Name="DarkTheme"
+                        GroupName="Theme"
+                        IsChecked="False"/>
+
+            <RadioButton Content="System Theme"
+                         TextColor="{DynamicResource textColor}"
+                        CheckedChanged="RadioButton_ChangeTheme"
+                        x:Name="SystemTheme"
+                        GroupName="Theme"
+                        IsChecked="False"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
