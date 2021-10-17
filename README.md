@@ -2,7 +2,7 @@
 Theme in Xamarin Forms
 
 
-My main problem during writing themes was making Status Bar Text Color adaptive to theme and its background
+My main problem during writing themes was making Status Bar Text Color adaptive to theme and its background </br>
 Solution:
 ```C#
 public void SetStatusBarColor(bool darkStatusBarTint)
